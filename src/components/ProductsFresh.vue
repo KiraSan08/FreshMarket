@@ -44,13 +44,21 @@ const props = defineProps({
 }
 
 .product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: white;
   padding: 20px;
   height: 270px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  width: 200px;
 }
 
 .product img {
   height: 160px;
+  border-radius: 8px;
 }
 
 .reviews img {

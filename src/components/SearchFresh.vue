@@ -1,14 +1,14 @@
 <template>
   <div class="main">
-    <h2>Del producto a tu mesa</h2>
+    <h2>Del productor a tu mesa</h2>
     <h3>Buscar productos cerca</h3>
     <div class="custom-input">
       <input v-model="inputText" type="text" />
       <img :src="FondoImage" alt="" />
     </div>
-    <div class="custom-input">
+    <!-- <div class="custom-input">
       <input v-model="maxNumber" type="text" />
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -27,14 +27,14 @@ const inputText = computed({
   },
 });
 
-const maxNumber = computed({
-  get() {
-    return "";
-  },
-  set(value) {
-    emits("maxPriceInput", value);
-  },
-});
+// const maxNumber = computed({
+//   get() {
+//     return "";
+//   },
+//   set(value) {
+//     emits("maxPriceInput", value);
+//   },
+// });
 </script>
 
 <style scoped>
